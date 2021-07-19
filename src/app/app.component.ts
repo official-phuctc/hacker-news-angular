@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hacker-news-angular';
+  title = 'Hacker News';
   block_articles: any = [];
  
   constructor(private http: HttpClient) {

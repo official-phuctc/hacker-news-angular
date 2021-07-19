@@ -1,12 +1,16 @@
 .article {
-  min-height: 400px;
+  min-height: 420px;
 
   .card-title {
     height: 80px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  image {
+  .image {
     height: 200px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
