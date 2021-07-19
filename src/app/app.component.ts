@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
   block_articles: any = [];
  
   constructor(private http: HttpClient) {
-    http.get<any>('https://hacker-news-rails.herokuapp.com/articles.json')
+    http.get<any>(environment.graphql_url)
       .subscribe(res => {
         const all_articles = res.original_hash.data.articles;
         while (all_articles.length > 0) {
