@@ -1,27 +1,36 @@
-# HackerNewsAngular
+# README
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+This repository create front server to show Hacker News by talking data from rails backend server
 
-## Development server
+# SET UP AND RUN
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## On development
+## Install packages
+```npm install```
 
-## Code scaffolding
+## Config Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Config environment
+Config enviroment in environments/environment.ts
 
-## Build
+### Run server
+```ng serve```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Go to [localhost:4200](localhost:4200)
 
-## Running unit tests
+## On production (Heroku)
+### Setup Heroku server
+[https://betterprogramming.pub/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d](https://betterprogramming.pub/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Config environment
+Config enviroment in environments/environment.prod.ts
 
-## Running end-to-end tests
+### Upload code to heroku
+#### Solution 1: Upload code to heroku server
+[https://betterprogramming.pub/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d](https://betterprogramming.pub/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### Solution 2: Get code from github (CD)
+[https://devcenter.heroku.com/articles/github-integration](https://devcenter.heroku.com/articles/github-integration)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Demo
+[http://hacker-news-angular12.herokuapp.com/](http://hacker-news-angular12.herokuapp.com/)
